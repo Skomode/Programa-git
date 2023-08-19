@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+
+h5 {font-size: 1em;
+display: none;}
+p{ font-size: 1.25em;}
+
+
+html{
+    height: 100%;
+}
+
+body{ 
+    display: flex;
+    margin:0;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    font-family: 'Franklin Gothic medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+    background-color: rgb(162, 212, 62);
+    border-radius: 1px;
+    border: solid darkolivegreen;
+    border-width: 2.5px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.9);
+    color: rgb(84, 84, 0)
+}
+
+button:hover{
+    background-color: rgb(186, 198, 163);
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+ }
+
+header{
+    background-color:  rgba(59, 79, 19, 0.7);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 10px 10px;
+    color: rgb(80, 80, 0);
+    font-size: 90px;
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header a{
+    padding: 3px 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(46, 46, 1);
+}
+
+header a:hover{
+    color: bisque;
+}
+
+footer {
+    background-color: rgb(29, 54, 5);
+    padding: 10px ;
+}
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);   
+}
+
+footer .container{
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.activo {
+    color: bisque;
+ }
+ .activo:hover {
+     color: rgb(46, 46, 1);
+ }
+ 
+ .descript{
+     margin-left: 20px;
+     flex-grow: 1;
+ }
+ 
+#Banda {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.651)), url("Avion.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main_container {
+    background-color: #464601;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.main_container a{
+
+    color: blanchedalmond;
+}
+
+.main_container a:hover{
+    color: rgba(105, 134, 47, 0.7);
+    transition-duration: 0.3s;
+}
+
+.main_container p {
+    font-size: 18px;
+    color: blanchedalmond;
+}
+
+.main_container h4 {
+    color: #67FF20;
+    font-size: 18px;
+}
+
+
+.cont_title {
+    font-size: 12px;
+    color:blanchedalmond;
+}
+
+.submain_container {
+
+    padding: 10px;
+    display: flex;
+    height: 90%;
+}
+
+.preg_fc {
+
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: end;
+    height: 160px;
+
+}
+
+
+.user_mn{
+
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+    align-items: center;
+    justify-content: end;
+    height: 160px;
+}
+
+.contact {
+
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+}
+
+.report {
+
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+    align-items: center;
+    justify-content: end;
+    height: 160px;
+}
+
+.p1 {
+
+    width: 500px;
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 4px;
+    transition-duration: 0.3s;
+    
+}
+
+.p2 {
+
+    width: 500px;
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.p3 {
+
+    width: 500px;
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+.p4 {
+
+    width: 500px;
+    padding-left: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-left: 12px;
+    transition-duration: 0.3s;
+}
+
+
+.p1:hover{
+    background-color: #292903;
+}
+
+.p2:hover{
+    background-color: #292903;
+}
+
+.p3:hover{
+    background-color: #292903;
+}
+
+.p4:hover{
+    background-color: #292903;
+}
+
+@media (min-width: 720px){
+
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        border-color: black;
+        }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 5px;
+    }
+
+    footer .container{
+        justify-content: right;
+    }
+
+    h5 {
+    display: block;
+    color: rgba(50, 36, 1, 0.71) ;
+    
+    }
+    
+}
+         

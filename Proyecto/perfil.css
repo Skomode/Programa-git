@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1em;
+    display: none;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+.descript {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    background-color: rgba(59, 79, 19, 0.7);
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 10px;
+    color: rgb(80, 80, 0);
+    font-size: 90px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header a {
+    padding: 3px 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(46, 46, 1);
+}
+
+header a:hover {
+    color: bisque;
+}
+
+#Banda {
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.651)), url("Avion.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+    width: 70%;
+    height: 90%;
+}
+
+.titulo {
+    border-radius: 17px;
+    font-size: 27px;
+    font-weight: bolder;
+    height: 90px;
+    color: olive;
+}
+
+.sup {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 80%;
+    padding-left: 100px;
+}
+
+.info {
+    padding-top: 60px;
+    padding-left: 20px;
+    align-items: center;
+    background-color: rgb(148, 171, 0);
+    width: 500px;
+    font-size: 19px;
+    font-weight: 900;
+    border-style: solid;
+    border-color: black;
+    
+
+}
+
+.info ol{
+    display: flex;
+    margin-right: 330px;
+    margin-left: 20px;
+}
+
+
+.doubl {
+    margin-left: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+    .photo{
+        background-color: rgb(3, 72, 42);
+        border-style: solid;
+        border-color: black;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .libreta{
+        background-color: rgb(82, 101, 4);
+        margin-top: 10px;
+        text-align: center;
+        border-style: solid;
+        border-radius: 50px;
+        width: 200px;
+        border-color: black;
+    }
+
+
+footer {
+    background-color: rgb(29, 54, 5);
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+@media (min-width: 720px) {
+
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        border-color: black;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 5px;
+    }
+
+    footer .container {
+        justify-content: right;
+    }
+
+    h5 {
+        display: block;
+        color: rgba(50, 36, 1, 0.71);
+
+    }
+
+}
